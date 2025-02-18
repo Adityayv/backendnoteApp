@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paste</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-700 text-white">
+    <div class="p-2">
+        <div class="rounded-md p-1 inline-block bg-purple-500 text-white">
+            <a href="/">NoteApp</a>
+        </div>
+    <div class="w-[80%] h-[80%] mx-auto my-auto">
+        <form action="" method="post" class="flex flex-col gap-2 p-2">
+            <input type="text" placeholder="Enter the title" name="title"
+                class="border border-black rounded-md p-2 outline-none" value="<%= title %>">
+            <textarea placeholder="Enter the content here" rows="10" name="content"
+                class="border border-black rounded-md p-2 outline-none"><%= content %></textarea>
+        </form>
+    </div>
+</body>
+
+</html>
